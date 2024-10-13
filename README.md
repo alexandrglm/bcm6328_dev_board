@@ -76,6 +76,8 @@ PINOUT:
 
 ### Modem
 * 1x RJ11 2-wire line port
+Old xDSL ITU-T G.992.5, ITU-T G.992.3, ITU-T G.992.1, ANSI T1.413 Issue 2
+Port may be used as "sensor", or data transfer, line.
 
 
 ### Serial - UART
