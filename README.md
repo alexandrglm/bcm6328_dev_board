@@ -55,6 +55,24 @@ This README provides information about a development board based on the Broadcom
 * **3G Bands:** B1 (2100MHz)
 * **Antennas:** Integrated + IPEX-1 U.FL to SMA connector
 
+### Mini PCIe
+IC: Broadcom BCM43225
+PINOUT:
+
+| miniPCIe SIGNAL| miniPCIe PIN | BCM43225 Signal | BCM43225 Pin | Addr |
+|---|---|---|---|---|
+| PCIE_TDN       | 87          | RD_NR2         | 29           | Input    |
+| PCIE_TDP       | 86          | RD_PR2         | 33           | Input    |
+| PCIE_RDP       | 81          | TD_PR2         | 25           | Output   |
+| PCIE_RDN       | 80          | TD_NR2         | 23           | Output   |
+| PCIE_CLKN      | 84          | CLK_NR2        | 11           | Input    |
+| PCIE_CLKP      | 83          | CLK_PR1        | 13           | Input    |
+| PCIE_RST       | 76          | RST (VIA)      | 22           | Input    |
+| PCIE_CLKREQ    | 75          | CLKREQ (VIA)   | 7            | Output   |
+
+**GND:** 4, 9, 15, 18, 21, 26, 27, 29, 34, 35, 37, 40, 43, 50
+**3V3:** 2, 24, 39, 41, 52
+
 
 ### Modem
 * 1x RJ11 2-wire line port
@@ -80,6 +98,14 @@ This README provides information about a development board based on the Broadcom
 ### Bootloader
 * CFE version 1.0.37-110.11-2 for BCM96328 (32bit,SP,BE)
 * Boot Address: 0xb8000000
+
+### First Kernel log
+[    0.000000] Linux version 5.15.167 (builder@buildhost) (mips-lede-linux-musl-gcc (LEDE GCC 12.3.0) 12.3.0, GNU ld (GNU Binutils) 2.40.0) #0 SMP Mon Sep 23 12:34:46 2024
+[    0.000000] CPU0 revision is: 0002a075 (Broadcom BMIPS4350)
+[    0.000000] MIPS: machine is BCM6328 Dev Board
+[    0.000000] 64MB of RAM installed
+[    0.000000] Primary instruction cache 32kB, VIPT, 4-way, linesize 16 bytes.
+[    0.000000] Primary data cache 32kB, 2-way, VIPT, cache aliases, linesize 16 bytes
 
 ### Software
 * **Linux Kernel:** 5.15.167 fully compatible
