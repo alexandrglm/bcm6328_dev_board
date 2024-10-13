@@ -4,22 +4,32 @@ This README provides information about a development board based on the Broadcom
 
 ## Hardware Specifications
 
-### CPU
+## CPU
 * **IC:** Broadcom BCM6328
 * **Type:** MIPS32 CPU
 * **MIPS:** BMIPS4350 @ 320 MHz
 * **BUS:** 160MHz
+  
+## RAM
+* **IC:** ProMOS V59C1512164QDJ25
+* **Type:** SDRAM DDR2-800
+* **DDR:** 320MHz
+* **Total Memory:** 64MB
+
+## Flash
+* **IC:** MX25L128
+* **Capacity:** 16MB
+
+## CONNECTIVITY
 
 ### Internal Switch
 * Integrated BRCM6328 Switch including:
 
 ### WLAN
-* **IC:** BCM43225 (2x2) 
-    * **Vendor:** 14e4 
-    * **ID:** a8d8
+* **IC:** Broadcom BCM43225 Vendor: 14e4, ID: a8d8
 * **Type:** WiFi N (802.11n draft 2.0)/b/g/a
 * **Features:** WDS, WMM (QoS), WPS
-* **Security:** WPA3 capable
+* **Security:** WPA3/WPA2 
 * **Antenna:** MIMO 2x2, 2x SMA connectors
 
 ### LAN
@@ -28,10 +38,11 @@ This README provides information about a development board based on the Broadcom
 * **Standards:** IEEE 802.3, IEEE 802.3u 10/100 BaseT Auto-sense MDI/MDX
 
 ### USB
-* 1x USB 2.0
+* 1x USB 2.0 OHCI/EHCI (Up to 480 Mbps)
+
 
 ### 4G-LTE FDD Modem
-* **IC:** Qualcomm 8916 Modem chipset
+* **IC:** Qualcomm 8916 Modem chipset (Up to 150Mbps)
 * **Modes:**
     * RNDIS
     * MBIM
@@ -44,18 +55,10 @@ This README provides information about a development board based on the Broadcom
 * **3G Bands:** B1 (2100MHz)
 * **Antennas:** Integrated + IPEX-1 U.FL to SMA connector
 
+
 ### Modem
 * 1x RJ11 2-wire line port
 
-### RAM
-* **IC:** ProMOS V59C1512164QDJ25
-* **Type:** SDRAM DDR2-800
-* **DDR:** 320MHz
-* **Total Memory:** 64MB
-
-### Flash
-* **IC:** MX25L128
-* **Capacity:** 16MB
 
 ### Serial - UART
 * 4 pins:
@@ -64,12 +67,15 @@ This README provides information about a development board based on the Broadcom
     3. Rx (pulled high)
     4. Vcc (3.3V)
 
+## BOARD
 
+### POWER INPUT: 12V / 5V/3,3V on board.
 ### LED
 * 7 led:
     1. 2x RGB
     2. 5x GREEN
 
+## DEV
 
 ### Bootloader
 * CFE version 1.0.37-110.11-2 for BCM96328 (32bit,SP,BE)
