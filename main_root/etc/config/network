@@ -5,7 +5,7 @@ config interface 'loopback'
         option netmask '255.0.0.0'
 
 config globals 'globals'
-        option ula_prefix 'fd89:e7db:725c::/48'
+        option ula_prefix '::::/48'
 
 config device 'switch'
         option name 'switch'
