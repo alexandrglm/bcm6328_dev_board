@@ -14,11 +14,11 @@ This README provides information about a development board based on the Broadcom
 * **IC:** ProMOS V59C1512164QDJ25
 * **Type:** SDRAM DDR2-800
 * **DDR:** 320MHz
-* **Total Memory:** 64MB
+* **Size:** 64MB
 
 ## Flash
 * **IC:** MX25L128
-* **Capacity:** 16MB
+* **Size:** 16384KB with 4096 sectors
 
 ## CONNECTIVITY
 
@@ -27,7 +27,7 @@ This README provides information about a development board based on the Broadcom
 
 ### WLAN
 * **IC:** Broadcom BCM43225 Vendor: 14e4, ID: a8d8
-* **Type:** WiFi N (802.11n draft 2.0)/b/g/a
+* **Type:** WiFi N (802.11n draft 2.0)/b/g/a (300 Mbps)
 * **Features:** WDS, WMM (QoS), WPS
 * **Security:** WPA3/WPA2 
 * **Antenna:** MIMO 2x2, 2x SMA connectors
