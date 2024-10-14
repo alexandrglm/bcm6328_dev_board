@@ -1,3 +1,3 @@
-#!/bin/ash
+#!/bin/sh
 mkdir -p /mnt/usb
 mount /dev/sda1 /mnt/usb
