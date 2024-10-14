@@ -1,7 +1,10 @@
 RNDIS:
 kmod-usb-net kmod-usb-net-rndis usbutils luci-proto-relay luci-app-dcwapd luci-app-ttyd luci-compat luci-mod-dashboard
 
+
 USB MASS STORAGE:
-block-mount e2fsprogs kmod-usb-storage kmod-usb2 kmod-fs-ext4  kmod-fs-isofs kmod-fs-msdos kmod-fs-netfs kmod-fs-ntfs3 kmod-fs-vfat kmod-fs-squashfs kmod-fs-udf kmod-fs-exfat kmod-fs-configfs
+block-mount e2fsprogs kmod-usb-storage kmod-usb2 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fs-squashfs kmod-fs-exfat kmod-fs-configfs parted 
+
+PYTHON:
 
 
