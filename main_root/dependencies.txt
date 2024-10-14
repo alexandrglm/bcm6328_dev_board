@@ -1,0 +1,1 @@
+kmod-usb-net kmod-usb-net-rndis usbutils luci-proto-relay luci-app-dcwapd luci-app-ttyd luci-compat luci-mod-dashboard
