@@ -1,0 +1,15 @@
+config forwarding
+    option src 'lan'
+    option dest 'wan'
+
+config zone
+    option name 'wan'
+    option input 'ACCEPT'
+    option output 'ACCEPT'
+    option forward 'ACCEPT'
+    option masq '1'
+    option mtu_fix '1'
+    list network 'wan'
+    list network 'wan6'
+    list network 'wwan'
+    list network 'wan_usb'
