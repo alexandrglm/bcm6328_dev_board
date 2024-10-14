@@ -17,13 +17,18 @@ This README provides information about a development board based on the Broadcom
 * **Size:** 64MB
 
 ## Flash
-* **IC:** MX25L128
+* **IC1:** MX25L128
 * **Size:** 16384KB with 4096 sectors
+* 
+* **IC2:**  NAND FLASH
+* **Size:** 32 Gb
+  
+* BUS SPEED: **1,5Mbps**
 
 ## CONNECTIVITY
 
 ### Internal Switch
-* Integrated BRCM6328 Switch including:
+* **SWITCHs SPEED:** 480Mbps
 
 ### WLAN
 * **IC:** Broadcom BCM43225 Vendor: 14e4, ID: a8d8
@@ -112,4 +117,5 @@ Port may be used as "sensor", or data transfer, line.
 ### Software
 * **Linux Kernel:** 5.15.167 fully compatible
 * **Scripting:**
-      * Pyhton v3.12
+      * Python 3.11.7-1
+      * Perl 5.28.1-9
