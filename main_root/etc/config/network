@@ -1,12 +1,12 @@
-root@OpenWrt:~# cat /etc/config/network 
 config interface 'loopback'
         option device 'lo'
         option proto 'static'
         option ipaddr '127.0.0.1'
-        option netmask '255.0.0.0'
+        option netmask '255.0.0.0'   
+
 
 config globals 'globals'
-        option ula_prefix 'fd27:b5d0:55b1::/48'
+        option ula_prefix 'fd23:e965:7eeb::/48'
 
 config device 'switch'
         option name 'switch'
@@ -25,8 +25,13 @@ config interface 'lan'
         option ip6assign '60'
 
 config interface 'wwan'
-        option proto 'dhcp'
+        option proto 'dhcp'   
+
 
 config interface 'wan_usb'
-        option ifname 'usb0'
-        option proto 'dhcp
+        option proto 'dhcp'
+        option device 'usb0'
+
+config device 'usb0'
+        option name 'usb0'
+        option type '8023ad' 
