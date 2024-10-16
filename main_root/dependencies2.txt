@@ -1,0 +1,9 @@
+#!/bin/sh
+# system_utils
+opkg install base-files busybox ca-bundle dnsmasq dropbear ethtool firewall4 fstools libc libgcc libustream-mbedtls logd mtd netifd nftables odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd procd-seccomp procd-ujail uci uclient-fetch urandom-seed urngd 
+# usb_disk_utils
+opkg install wpad-basic-mbedtls iwinfo luci e2fsprogs ntfs-3g fdisk blkid adb usbutils libusb-1.0-0
+# kernel_mods_utils
+opkg install kmod-gpio-button-hotplug kmod-nft-offload kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 broadcom-43225-sprom kmod-leds-bcm6328 kmod-usb-net kmod-usb-net-rndis kmod-usb-storage kmod-fs-ext4 kmod-fs-ntfs kmod-fs-vfat kmod-usb-core kmod-usb-ehci kmod-usb-net-cdc-ether
+# LUCI_client_utils
+opkg install luci-app-firewall luci-app-opkg luci-app-ddns luci-app-qos luci-app-nlbwmon luci-app-ttyd luci-mod-admin-full luci-theme-bootstrap luci-app-commands luci-app-ledtrig-usbport
